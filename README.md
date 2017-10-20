@@ -25,6 +25,8 @@ Specifically:
 1. Complete the TODO items in the `FixedArrayQueue` implementation until the tests pass.
 1. Complete the main class `SingleQueueService`, which reads successive input lines until EOF and
 puts them on a queue that the background consumer activity processes.
+1. When running the main class, note that the consumer is set to serve customers at a fixed rate.
+By entering customers' names at different rates, try to create scenarios where customers arrive infrequently enough for the queue to remain empty, or in such quick succession that the queue becomes full.
 1. Answer the following questions:
    - Why does `FixedArrayQueue` require an explicit constructor?
    - What happens when you offer an item to a full `FixedArrayQueue`?
