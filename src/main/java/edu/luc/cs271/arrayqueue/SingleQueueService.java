@@ -22,13 +22,15 @@ public class SingleQueueService {
             () -> {
               while (true) {
                 String current;
+		int remaining;
                 synchronized (lock) {
                   current = null; // TODO try to take next name from queue
+		  remaining = 0; // TODO determine resulting size of queue
                 }
                 if (current == null) {
                   System.out.println("no one waiting");
                 } else {
-                  System.out.println(current + " is being served");
+                  System.out.println(current + " is being served, " + remaining + " still waiting");
                 }
                 try {
                   Thread.sleep(SERVICE_TIME);
