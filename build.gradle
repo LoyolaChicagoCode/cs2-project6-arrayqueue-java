@@ -1,0 +1,47 @@
+buildscript {
+    repositories {
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.15.0'
+        classpath 'gradle.plugin.com.github.sherter.google-java-format:google-java-format-gradle-plugin:0.6'
+    }
+}
+
+apply plugin: 'application'
+apply plugin: 'com.github.ben-manes.versions'
+apply plugin: 'com.github.sherter.google-java-format'
+
+libsDirName = 'lib' // simple workaround for error in startScripts task
+mainClassName = 'edu.luc.cs271.arrayqueue.SingleQueueService' // TODO change this setting to match your main class
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}    
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+tasks.withType(JavaCompile) { 
+    options.compilerArgs << "-Xlint:all" 
+}
+
+tasks.withType(JavaExec) {
+    jvmArgs << "-enableassertions"
+}
+
+run {
+    standardInput = System.in
+    standardOutput = System.out
+}
+
+googleJavaFormat {
+    toolVersion = '1.4'
+}
