@@ -23,7 +23,8 @@ and use this implementation in the context of a typical queue-based application.
 Specifically:
 
 1. Complete the TODO items in the `FixedArrayQueue` implementation until the tests pass.
-1. Complete the main class `SingleQueueService`, which reads successive input lines until EOF and then prints themin reverse order, using a suitable stack instance.
+1. Complete the main class `SingleQueueService`, which reads successive input lines until EOF and
+puts them on a queue that the background consumer activity processes.
 1. Answer the following questions:
    - Why does `FixedArrayQueue` require an explicit constructor?
    - What happens when you offer an item to a full `FixedArrayQueue`?
