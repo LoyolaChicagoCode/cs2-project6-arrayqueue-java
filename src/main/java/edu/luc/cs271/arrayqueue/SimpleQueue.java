@@ -17,8 +17,7 @@ public interface SimpleQueue<E> {
    *
    * @post The queue is one item larger and nonempty.
    * @param obj The object to be inserted
-   * @return The object inserted
-   * @throws java.lang.IllegalStateException if there is space for the item
+   * @return true if the object has been inserted, false otherwise
    */
   boolean offer(E obj);
 
@@ -26,8 +25,7 @@ public interface SimpleQueue<E> {
    * Returns the object at the front of the queue without removing it.
    *
    * @post The queue remains unchanged.
-   * @return The object at the front of the queue
-   * @throws java.util.NoSuchElementException if queue is empty
+   * @return The object at the front of the queue if one exists, null otherwise
    */
   E peek();
 
@@ -35,8 +33,7 @@ public interface SimpleQueue<E> {
    * Returns the object at the front of the queue and removes it.
    *
    * @post The queue is one item smaller.
-   * @return The object at the top of the queue
-   * @throws java.util.NoSuchElementException if queue is empty
+   * @return The object at the front of the queue if one exists, null otherwise
    */
   E poll();
 
@@ -44,7 +41,7 @@ public interface SimpleQueue<E> {
    * Returns true if the queue is empty; otherwise, returns false.
    *
    * @post The queue remains unchanged.
-   * @return true (false) if the queue is empty (not empty)
+   * @return true if the queue is empty, false otherwise
    */
   boolean isEmpty();
 
