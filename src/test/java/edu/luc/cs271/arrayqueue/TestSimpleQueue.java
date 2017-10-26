@@ -128,6 +128,7 @@ public class TestSimpleQueue {
     fixture.poll();
     fixture.offer(value3);
     final List<String> list = fixture.asList();
+    assertEquals(2, fixture.size());
     assertEquals(2, list.size());
     assertEquals(Arrays.asList(value2, value3), list);
   }
