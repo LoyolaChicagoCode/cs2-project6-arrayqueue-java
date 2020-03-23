@@ -1,9 +1,9 @@
-# Loyola COMP 271 Lab 6
+# Loyola COMP 271 Lab 8
 
 # Individual project
 
-Collaborate with your classmates on a conceptual level but do not share code.
-Submit individually.
+Collaborate with your teammates but submit individually. Clearly list the members of your team.
+
 
 # Objectives
 
