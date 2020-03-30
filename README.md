@@ -44,3 +44,7 @@ By entering customers' names at different rates, try to create scenarios where c
   - 0.2 grammar, style, formatting
 
 *5 points TOTAL*
+
+# References
+
+- [Implementing a Queue using a circular array](http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/8-List/array-queue2.html)
