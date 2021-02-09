@@ -1,9 +1,8 @@
-# Loyola COMP 271 Lab 8
+# Loyola COMP 271 Lab 8: array-based queues
 
-# Individual project
+## Individual activity
 
 Collaborate with your teammates but submit individually. Clearly list the members of your team.
-
 
 # Objectives
 
