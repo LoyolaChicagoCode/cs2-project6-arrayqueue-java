@@ -14,7 +14,7 @@ public class SingleQueueService {
     final SimpleQueue<String> queue = new FixedArrayQueue<>(5);
 
     // lock object for thread safety
-    final Object lock = new Object();
+    final var lock = new Object();
 
     // background activity for serving customers
     final Thread consumer =
@@ -22,10 +22,10 @@ public class SingleQueueService {
             () -> {
               while (true) {
                 String current;
-		int remaining;
+		        int remaining;
                 synchronized (lock) {
                   current = null; // TODO try to take next name from queue
-		  remaining = 0; // TODO determine resulting size of queue
+		          remaining = 0; // TODO determine resulting size of queue
                 }
                 if (current == null) {
                   System.out.println("no one waiting");
@@ -43,13 +43,13 @@ public class SingleQueueService {
     consumer.start();
 
     // foreground activity for reading customer names from input
-    final Scanner input = new Scanner(System.in);
+    final var input = new Scanner(System.in);
     System.out.print("enter next customer: ");
     while (input.hasNextLine()) {
-      final String name = input.nextLine();
-      boolean result;
+      final var name = input.nextLine();
+      var result = false;
       synchronized (lock) {
-        result = false; // TODO try to add this name tothe queue
+        // TODO try to add this name to the queue
       }
       if (result) {
         System.out.println(name + " has joined the queue");
