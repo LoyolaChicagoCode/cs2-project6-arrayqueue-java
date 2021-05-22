@@ -34,6 +34,7 @@ public class TestSimpleQueue {
   public void testAfterOffer() {
     final var value = "hello";
     assertTrue(fixture.offer(value));
+    assertFalse(fixture.isEmpty());
     assertEquals(1, fixture.size());
     assertEquals(value, fixture.peek());
   }
