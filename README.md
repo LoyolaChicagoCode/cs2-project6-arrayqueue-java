@@ -33,15 +33,21 @@ By entering customers' names at different rates, try to create scenarios where c
    - What happens when you poll an empty `FixedArrayQueue`?
    - What is the time and (extra) space complexity of each of the `FixedArrayQueue` methods?
 
-# Grading
+# Grading (SP22 - total 3.5 points)
+
+- 2 completion of items marked TODO in `FixedArrayQueue` and tests passing
+- 0.5 completion of `SingleQueueService` and correct behavior
+- 1 written part
+  - 0.8 responses to the questions above
+  - 0.2 grammar, style, formatting
+
+# Grading (total 5 points)
 
 - 2.5 completion of items marked TODO in `FixedArrayQueue` and tests passing
 - 1 completion of `SingleQueueService` and correct behavior
 - 1.5 written part
   - 1.2 responses to the questions above
   - 0.3 grammar, style, formatting
-
-*5 points TOTAL*
 
 # References
 
