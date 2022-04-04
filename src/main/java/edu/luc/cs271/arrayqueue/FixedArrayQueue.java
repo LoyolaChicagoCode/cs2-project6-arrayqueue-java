@@ -1,6 +1,5 @@
 package edu.luc.cs271.arrayqueue;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

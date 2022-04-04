@@ -21,10 +21,10 @@ public class SingleQueueService {
             () -> {
               while (true) {
                 String current;
-		        int remaining;
+                int remaining;
                 synchronized (lock) {
                   current = null; // TODO try to take next name from queue
-		          remaining = 0; // TODO determine resulting size of queue
+                  remaining = 0; // TODO determine resulting size of queue
                 }
                 if (current == null) {
                   System.out.println("no one waiting");
