@@ -14,6 +14,7 @@ An understanding of the following concepts and techniques:
 - queues with fixed versus growing capacity
 - algorithms based on the queue's FIFO policy
 - interface-based testing
+- initial exposure to concurrency
 
 # Instructions
 
