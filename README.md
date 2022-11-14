@@ -51,4 +51,4 @@ By entering customers' names at different rates, try to create scenarios where c
 
 # References
 
-- [Implementing a Queue using a circular array](http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/8-List/array-queue2.html)
+- [Introduction and Array Implementation of Circular Queue](https://www.geeksforgeeks.org/introduction-and-array-implementation-of-circular-queue)
