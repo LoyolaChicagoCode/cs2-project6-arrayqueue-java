@@ -1,4 +1,4 @@
-# Loyola COMP 271 Lab 8: array-based queues
+# Loyola COMP 271 Lab 5: array-based queues
 
 ## Individual activity
 
