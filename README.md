@@ -1,4 +1,4 @@
-# Loyola COMP 271 Lab 5: array-based queues
+# Loyola COMP 271 Project 6: array-based queues
 
 ## Individual activity
 
@@ -33,14 +33,6 @@ By entering customers' names at different rates, try to create scenarios where c
    - What happens when you offer an item to a full `FixedArrayQueue`?
    - What happens when you poll an empty `FixedArrayQueue`?
    - What is the time and (extra) space complexity of each of the `FixedArrayQueue` methods?
-
-# Grading (SP22 - total 3.5 points)
-
-- 2 completion of items marked TODO in `FixedArrayQueue` and tests passing
-- 0.5 completion of `SingleQueueService` and correct behavior
-- 1 written part
-  - 0.8 responses to the questions above
-  - 0.2 grammar, style, formatting
 
 # Grading (total 5 points)
 
