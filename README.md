@@ -1,8 +1,8 @@
 # Loyola COMP 271 Project 6: array-based queues
 
-## Individual activity
+## Group activity
 
-Collaborate with your teammates but submit individually. Clearly list the members of your team.
+In this activity, we'll implement our own array-based data structure, a fixed-size circular queue!
 
 # Objectives
 
