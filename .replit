@@ -1,6 +1,6 @@
 compile = "mvn compile"
 run = "mvn test"
-entrypoint = "src/main/java/edu/luc/cs271/arrayqueue/Main.java"
+entrypoint = "src/main/java/edu/luc/cs271/arrayqueue/SingleQueueService.java"
 hidden = ["**/*.class", "target"]
 
 [packager]
@@ -25,7 +25,7 @@ channel = "stable-22_11"
 support = true
 
 [debugger.compile]
-command = "javac -classpath .:/run_dir/junit-4.12.jar:target/dependency/* -g -d . $(find . -type f -name '*.java')"
+command = "mvn compile"
 
 [debugger.interactive]
 transport = "localhost:0"
@@ -56,4 +56,4 @@ type = "request"
 
 [debugger.interactive.launchMessage.arguments]
 classPaths = ["."]
-mainClass = "Main"
+mainClass = "edu.luc.cs271.arrayqueue.SingleQueueService"
