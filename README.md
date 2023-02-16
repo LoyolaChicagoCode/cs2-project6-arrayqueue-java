@@ -34,6 +34,16 @@ By entering customers' names at different rates, try to create scenarios where c
    - What happens when you poll an empty `FixedArrayQueue`?
    - What is the time and (extra) space complexity of each of the `FixedArrayQueue` methods?
 
+# Running the code
+
+To run the tests, please press the green "run" button or, in a Replit Shell window, run
+
+    mvn test
+
+To run the main program, in a Replit Shell window, run
+
+    mvn exec:java
+
 # Grading (total 5 points)
 
 - 2.5 completion of items marked TODO in `FixedArrayQueue` and tests passing
