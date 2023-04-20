@@ -15,7 +15,8 @@ public interface SimpleQueue<E> {
    * Adds an item to the end of the queue and returns a boolean to indicate whether the attempt
    * succeded.
    *
-   * @post The queue is one item larger and nonempty.
+   * @pre The queue has capacity for at least one more item.
+   * @post The queue is nonempty and one item larger than before.
    * @param obj The object to be inserted
    * @return true if the object has been inserted, false otherwise
    */
@@ -24,6 +25,7 @@ public interface SimpleQueue<E> {
   /**
    * Returns the object at the front of the queue without removing it.
    *
+   * @pre The queue is nonempty.
    * @post The queue remains unchanged.
    * @return The object at the front of the queue if one exists, null otherwise
    */
@@ -32,7 +34,8 @@ public interface SimpleQueue<E> {
   /**
    * Returns the object at the front of the queue and removes it.
    *
-   * @post The queue is one item smaller.
+   * @pre The queue is nonempty.
+   * @post The queue is one item smaller than before.
    * @return The object at the front of the queue if one exists, null otherwise
    */
   E poll();

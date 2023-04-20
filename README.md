@@ -54,4 +54,6 @@ To run the main program, in a Replit Shell window, run
 
 # References
 
+- [java.util.Queue interface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Queue.html)
 - [Introduction and Array Implementation of Circular Queue](https://www.geeksforgeeks.org/introduction-and-array-implementation-of-circular-queue)
+- [Zombies testing with circular queue/buffer example](http://blog.wingman-sw.com/tdd-guided-by-zombies)

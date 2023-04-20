@@ -17,8 +17,13 @@ public class FixedArrayQueue<E> implements SimpleQueue<E> {
 
   // TODO why do we need an explicit constructor?
 
+  /**
+   * @pre capacity > 0
+   * @post TODO
+   */
   @SuppressWarnings("unchecked")
   public FixedArrayQueue(final int capacity) {
+    // TODO ensure precondition
     this.capacity = capacity;
     this.data = (E[]) new Object[capacity];
     this.size = 0;
@@ -47,7 +52,7 @@ public class FixedArrayQueue<E> implements SimpleQueue<E> {
   @Override
   public boolean isEmpty() {
     // TODO
-    return true;
+    return false;
   }
 
   @Override
@@ -58,6 +63,7 @@ public class FixedArrayQueue<E> implements SimpleQueue<E> {
   @Override
   public List<E> asList() {
     // TODO implement using an ArrayList preallocated with the right size
+    // TODO then return as an unmodifiable list
     return Arrays.asList();
   }
 }
